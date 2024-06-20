@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rental tools</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .header{
+   height: 12vh;
+   width:100%;
+   display:flex;
+   /* justify-content: center; */
+   background-color: white;
+   color:black;
+   align-items:center;
+   /* position:fixed; */
+}
+.header img{
+    width:5rem;
+    height:4.5rem;
+    /* mix-blend-mode: multiply; */
+    margin-right:1.5rem;
+}
+.header h1{
+    color:black;
+}
+.search{
+    margin-left: 4rem;
+   display:flex;
+   width:30%;
+   height:5vh;
+   /* justify-content:center; */
+   border:2px solid blue;
+   border-radius:30px;
+}
+.search input{
+    width:100%;
+    border:none;
+    outline:none;
+    background-color: white;
+    text-align: center;
+    border-radius:30px;
+}
+::placeholder {
+  color: black;
+}
+select{
+    height: 2rem;
+    margin-left: 3rem;
+}
+button{
+    height: 2rem;
+    margin-left: 5rem;
+    font-size: 1.5rem;
+    color:black;
+}
+main h2{
+    margin-top: 2rem;
+    font-size: 2rem;
+    margin-left: 10rem;
+    color:white;
+}
+main ul{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+main ul li img{
+    width:10rem;
+    height: 10rem;
+    border: 2px solid white;
+    border-radius: 5%;
+}
+.machines{
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+.machines ul{
+    list-style: none;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+}
+.machines ul li img{
+    width: 300px;
+    height: 250px;
+    margin-left: 2rem;
+    border-radius: 10%;
+    border: 2px solid white;
+}
+.machines h2{
+    font-size: 3rem;
+    margin-top: 2rem;
+    color:white;
+}
+.machines ul li h2{
+    font-size: 2rem;
+    margin-left: 4rem;
+    color:white;
+}
+.machines button{
+    width: 150px;
+    border-radius: 10%;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+small{
+    color: red;
+}
+body{
+    background-color: #212121;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><img src="logo7.jpg"/></a>
+        <h1>HARDWARE HUB</h1>
+        <section class="search" id="symbol">
+            <input type="text" placeholder="search a service">
+        </section>
+        <select>
+            <option>Quick home repairs</option>
+            <option>AC repairs</option>
+            <option>Vehicle repairs</option>
+        </select>
+        <button><a href="index.html"><i>Home</i></a></button>
+    </div>
+    <main>
+    <h2>Home repairs</h2>
+    <ul> <li><a href="service1.html"><img src="home_repair1.jpg" alt=""></a></li>
+     <li><a href="service1.html"><img src="home_repair2.jpg" alt=""></a></li>
+     <li><a href="service1.html"><img src="home_repair3.avif" alt=""></a></li>
+     <li><a href="service1.html"><img src="home_repair4.avif" alt=""></a></li>
+ </ul>
+ <ul>
+     <li> Tap repair</li>
+     <li>Fan repair </li>
+     <li>Pipe repair</li>
+     <li>Wood repair</li>
+ </ul>
+    <h2>AC and Appiliences repairs</h2>
+    <ul> <li><a href="service1.html"><img src="ac_1.jpg" alt=""></a></li>
+        <li><a href="service1.html"><img src="ac_2.avif" alt=""></a></li>
+        <li><a href="service1.html"><img src="ac_3.avif" alt=""></a></li>
+        <li><a href="service1.html"><img src="ac_4.jpg" alt=""></a></li>
+    </ul>
+ <ul>
+     <li><pre>  AC repair</pre></li>
+     <li><pre>       Fridge repair  </pre></li>
+     <li>Microwave repair</li>
+     <li>Washing machine repair</li>
+ </ul>
+    </main>
+   
+        
+</body>
+</html>

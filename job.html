@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Pursuing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black; /* Light Blue Background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 80px;
+            border-radius: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 4px solid #add;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        .checkbox-container {
+            display: flex; 
+            flex-direction: row;
+            align-items: center; 
+            margin-left: 4rem;
+            width:40%;
+            margin-top: 1.5rem;
+            /* display: ; */
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 2rem;
+            width: 100px;
+            margin-left: 6rem;
+        }
+
+        .home-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            width: 100px;
+            height: 30px;
+        }
+
+        small {
+            margin-left: 8px;
+        }
+    </style>
+        <!-- <script> -->
+            <!-- function a(){                -->
+                <!-- alert("We will contact you soon!"); -->
+            <!-- } -->
+        <!-- </script> -->
+</head>
+
+<body>
+    <button class="home-button" onclick="location.href='./index.html'">Home</button>
+    <div class="container">
+        <h1>Become a Captain</h1>
+        <hr>
+        <br>
+        <form method="post" action="./job.php">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required>
+
+            <label for="aadharNumber">Aadhar Number:</label>
+            <input type="text" id="aadharNumber" name="aadharNumber" placeholder="Enter Aadhar number(enter 12 numbers)" pattern="[0-9]{12}" required>
+
+            <label for="DOB">DD/MM/YYYY:</label>
+            <input type="date" id="DOB" name="DOB" placeholder="Enter Date of birth" pattern="[01-31]{1}-[01-12]{1}-[1900-2023]{1}"  required> 
+             
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter phone number" pattern="[0-9]{10}" required>
+
+            <label for="gmail">Gmail Address:</label>
+            <input type="email" id="gmail" name="gmail" placeholder="Enter your Gmail address" required>
+
+            <label for="city">City:</label>
+            <select id="city" name="city" placeholder="Select your city" required>
+                <option value="">Select your city</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="delhi">Delhi</option>
+                <option value="gujrat">Gujrat</option>
+                <option value="vizag">Vizag</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="chennai">Chennai</option>
+                <option value="kolkata">Kolkata</option>
+                <option value="jaipur">Jaipur</option>
+                <option value="ahmedabad">Ahmedabad</option>
+                <option value="pune">Pune</option>
+            </select>
+            <label for="address">Address:</label>
+            <input type="address" id="address" name="address" placeholder="Enter your address" required>
+
+            <label for="job">Job:</label>
+            <select id="job" name="job" placeholder="Select your job" required>
+                <option value="">Select your job</option>
+                <option value="acRepairMechanic">AC Repair Mechanic</option>
+                <option value="carpenter">Carpenter</option>
+                <option value="computerRepairMechanic">Computer Repair Mechanic</option>
+                <option value="cutter">Cutter</option>
+                <option value="fitter">Fitter</option>
+                <option value="helper">Helper</option>
+                <option value="lagger">Lagger</option>
+                <option value="plumber">Plumber</option>
+                <option value="supervisor">Supervisor</option>
+                <option value="washingMachineRepairMechanic">Washing Machine Repair Mechanic</option>
+                <option value="welder">Welder</option>
+                <!-- Add 10 more job options alphabetically -->
+                <option value="cleaner">Cleaner</option>
+                <option value="cook">Cook</option>
+                <option value="driver">Driver</option>
+                <option value="electrician">Electrician</option>
+                <option value="gardener">Gardener</option>
+                <option value="housekeeper">Housekeeper</option>
+                <option value="painter">Painter</option>
+                <option value="securityGuard">Security Guard</option>
+                <option value="tailor">Tailor</option>
+                <option value="waiter">Waiter</option>
+            </select>
+
+            <label for="languages">Languages Known:</label>
+            <input type="text" id="languages" name="languages" placeholder="Enter languages known" required>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="termsCheckbox" name="termsCheckbox" required>
+                <label for="termsCheckbox"><a href="terms.html">Terms and Conditions</a></label>
+               
+            </div>
+                <input type="submit" value="submit">
+            
+        </form>
+    </div>
+
+</body>
+
+</html>

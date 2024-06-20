@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service1</title>
+    <style>
+        .a{
+    
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 1.5rem;
+            background-image: linear-gradient(to right, violet , blue);
+            height: 100vh;
+            
+        }
+        .b{
+            width:40%;
+            /* height: 70vh;  */
+            background-color: aqua;
+            text-align: center;
+            height: 90vh;
+            margin-top: 3rem;
+           
+           
+        }
+        .b h1{
+            margin-top:3rem;
+            color:black;
+            font-size: 2rem;
+        }
+        .c{
+            background-color: white;
+            width:40%;
+            height: 90vh; 
+            text-align: center;
+            height: 90vh;
+            margin-top: 3rem;
+            align-items: center;
+        }
+        .c h1{
+            font-size: 2rem;
+        }
+        .c input{
+            margin-top: 2rem;
+            width:60%;
+            height:2rem;
+            border:2px solid black;
+        }
+        .c label{
+            font-size: 1rem;
+        }
+         .c .d{
+            margin-top: 3rem;
+            height:4rem;
+            width:60%;
+            border: 2px solid black;
+        }
+        .c input[type="submit"]{
+            margin-top: 1.5rem;
+            height:2rem;
+            width: 100px;
+            background-color: black;
+            color: white;
+            font-size: larger;
+        }
+        textarea{
+            height: 100px;
+            margin-top: 2rem;
+            width: 300px;
+            border: 2px solid black;
+        }
+        .c select{
+            margin-top: 2rem;
+            height:27px;
+            width:300px;
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+      <section class="b">
+       <b><h1>HOME SERVICES</h1></b> 
+        <img src="https://media.istockphoto.com/id/1421422160/photo/interior-of-living-room.webp?b=1&s=170667a&w=0&k=20&c=wSTh-QHxbzidn3tdRFy_mS09fwiVEqBExJpPX9OhUXI=" alt="">
+      </section>
+      <section class="c">
+         <b><h1>Services</h1></b>
+         <h3>Let's take the services</h3>
+         <form  method="post" action="./service.php">
+         <input type="text" placeholder="enter name" name="username" required/><br>
+         <input type="text" placeholder="enter mail id" name="email" required/><br>
+         <select id="service" name="service" placeholder="Select your tools" required>
+            <option value="">Select your service</option>
+            <option value="acRepairMechanic">AC Repair</option>
+            <option value="carpenter">Carpenter tools</option>
+            <option value="computerRepairMechanic">House Repair</option>
+            <option value="cutter">Cutter service</option>
+            <option value="fitter">Fitter service</option>
+            <option value="lagger">Lagger service</option>
+            <option value="plumber">Plumber service</option>
+            <option value="supervisor">Supervisor</option>
+            <option value="washingMachineRepairMechanic">Washing Machine Repair service</option>
+            <option value="welder">Welder tools</option>
+        </select><br>
+         <!-- <input type="text" placeholder="enter the service" name="service" required/><br> -->
+         <textarea placeholder="enter your address" name="address" required></textarea><br>
+         <input type="submit" value="submit">
+        </form>
+      </section>
+    </div>
+</body>
+</html>

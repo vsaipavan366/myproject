@@ -1,0 +1,198 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            height: 1200px;
+            align-items: center;  
+            display: flex; 
+            justify-content: center; 
+            flex-direction: column;
+            width: 100%;
+            position: absolute;
+            background-color: #212121;
+            margin-top: 0.7rem;
+        }
+        .forem {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            height: 201px;
+        }
+        .forem img {
+            border: 1px solid black;
+            width: 60%;
+            height: 184px;  
+            position: absolute;
+            opacity: 0.8;
+        }
+        .forem h2 {
+            position: relative;
+            top: 3rem;
+            color: white;
+            font-size: 40px;
+            opacity: 2;
+            border: 1px solid black;
+            background-color: blue;
+            height: 7vh;
+            margin-top: 1rem;
+        }
+        .sai {
+            width: 60%;
+            height: 800px;
+            display: flex;
+            flex-direction: column;  
+            border: 1px solid black;
+            background-color: white;
+        }
+        .sai label {
+            margin-top: 1.5rem;
+            margin-left: 2.5rem;
+            font-size: 1.5rem;
+        }
+        .sai .fields input {
+            width: 60%;
+            height: 2.5rem;
+            margin-top: 1rem;
+            margin-left: 3rem;
+            font-size: 1.3rem;
+        }
+        .sai input[type="text"] {
+            border: 2px solid black;
+            border-radius: 5%;
+        }
+        .radio {
+            width: 100px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            margin-left: 9rem;
+        }
+        .sai .radio label {
+            margin-top: 0rem;
+            margin-left: 0rem;
+            font-size: 2rem;
+        }
+        .sai .radio input {
+            height: 1rem;
+            margin-left: 2rem;
+        }
+        .sai .radio .gen {
+            font-size: 1.5rem;
+            margin-top: 0.6rem;
+        }
+        .sai .lang {
+            height: 10vh;
+            display: flex;
+            align-items: center;
+        }
+        .sai .lang label {
+            margin-top: 1rem;
+            margin-left: 2.2rem;
+            font-size: 1.8rem;
+        }
+        .sai .lang select {
+            display: flex;
+            align-items: center;
+            margin-top: 2rem;
+            width: 20%;
+            height: 40%;
+        }
+        input[type="submit"] {
+            width: 40%;
+            background-color: #212121;
+            color: white;
+            font-size: larger;
+            padding: 0.8rem;
+            margin-top: 3.2rem;
+            margin-left: 10rem;
+            margin-bottom: 2rem;
+        }
+        img {
+            margin-top: 0.7rem;
+        }
+        .fields small {
+            font-size: large;
+            margin-left: 4rem;
+            visibility: hidden;
+        }
+        .fields.error input {
+            border-color: red;
+        }
+        .fields.error small {
+            visibility: visible;
+            color: red;
+        }
+        .fields.success small {
+            visibility: hidden;
+        }
+        .fields.success input {
+            border-color: green;
+        }
+        .fields .radio.error small {
+            visibility: visible;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html"><img src="logo.png" width="50" height="50" style="box-shadow: 2px 2px 2px 2px red;"/></a>
+    <header>
+        <div class="forem">
+            <img src="https://i.pinimg.com/1200x/d0/99/e3/d099e32c2ca2111377c5622d24133194.jpg"/>
+            <h2>REGISTRATION FORM</h2>
+        </div>
+        <form method="post" action="./signup_valid.php" class="sai" id="f">
+            <div class="fields">
+                <label>Name:</label><br>
+                <input type="text" id="username" name="username" placeholder="Enter Your Name" required><br>
+                <small>error msg</small>
+            </div>
+            <div class="fields">
+                <label>Email:</label><br>
+                <input type="text" id="email" name="email" placeholder="Enter Your Email" required><br>
+                <small>error msg</small>
+            </div>
+            <div class="fields">
+                <label>New Password:</label><br>
+                <input type="password" id="npass" name="npass" placeholder="Enter New Password" required><br>
+                <small>error msg</small>
+            </div>
+            <div class="fields">
+                <label>Confirm Password:</label><br>
+                <input type="password" id="cpass" name="cpass" placeholder="Enter Confirm Password" required><br>
+                <small>error msg</small>
+            </div>
+            <div class="fields">
+                <label>Mobile Number:</label><br>
+                <input type="text" id="mno" name="mno" placeholder="Enter Phone Number" required><br>
+                <small>error msg</small>
+            </div>
+            <div class="fields">
+                <div class="radio">
+                    <label>Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="male"><label class="gen">Male</label>
+                    <input type="radio" id="female" name="gender" value="female"><label class="gen">Female</label>
+                </div>
+            </div>
+            <div class="lang">
+                <label>Select Language: </label>
+                <select id="menu">
+                    <option>English</option>
+                    <option>Hindi</option>
+                    <option>Telugu</option>
+                </select>
+            </div>
+            <input type="submit" name="submit"/>
+        </form>
+    </header>
+    <script src="./script.js"></script>
+</body>
+</html>
